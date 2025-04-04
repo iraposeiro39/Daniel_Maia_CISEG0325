@@ -8,6 +8,7 @@ for i in range(10):
     nota = float(input(f"Insira a nota nº{i+1}: "))
     lista_notas.append(nota)
 
+# Logica
 media = sum(lista_notas) / len(lista_notas)
 
 notas_acima_igual=[]
@@ -19,7 +20,7 @@ for i in lista_notas:
     if i < media:
         notas_abaixo.append(i)
 
-
+# Output
 print(f"A media das notas é: {media:.2f}")
 print(f"Quantidade de alunos com a nota igual ou acima da média: {len(notas_acima_igual)}")
 print(f"Quantidade de alunos com a nota abaixo da média: {len(notas_abaixo)}")
