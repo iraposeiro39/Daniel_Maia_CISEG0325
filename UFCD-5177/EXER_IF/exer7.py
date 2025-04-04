@@ -18,7 +18,7 @@ nota_final = var1+var2+var3
 
 # Output
 print(f"Nome do aluno: {name}")
-print(f"Nota Final: {nota_final}")
+print(f"Nota Final: {nota_final:.1f}")
 print("Situação final:")
 if nota_final >= 6:
     print("Aprovado!")
