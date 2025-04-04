@@ -11,21 +11,22 @@
 #
 # Input
 name = input("Insira o seu nome: ")
-value = int(input("Insira o valor da compra: "))
+value = float(input("Insira o valor da compra: "))
 
 # Logica
 desc = 0
 if value < 200:
-    desc = 0.1
+    desc = 10
 elif value >= 200 and value <= 500:
-    desc = 0.15
+    desc = 15
 elif value > 500:
-    desc = 0.2
+    desc = 20
 
-desc_value = value * desc
+desc_value = value * (desc / 100)
 
 # Output
 print(f"Nome: {name}")
-print(f"Percentagem de desconto: {desc * 100}%")
-print(f"Valor original: {value}€")
-print(f"Valor com desconto: {value - desc_value}€")
+print(f"Percentagem de desconto: {desc}%")
+print(f"Valor original: {value:.2f}€")
+print(f"Valor do desconto: {desc_value:.2f}€")
+print(f"Valor com desconto: {value - desc_value:.2f}€")
