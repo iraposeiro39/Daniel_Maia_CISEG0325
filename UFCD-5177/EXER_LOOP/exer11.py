@@ -4,6 +4,6 @@
 # 22
 # 333
 num = "1"
-for i in range(1,4):
+for i in range(1,6):
     num_int = num * i
     print(int(num_int) * i)
