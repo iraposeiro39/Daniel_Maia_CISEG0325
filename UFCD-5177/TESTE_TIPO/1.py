@@ -1,6 +1,5 @@
 #!/bin/python3
 #
-# Init Vars
 
 def primos(x):
     if x <= 1:
